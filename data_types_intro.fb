@@ -1,0 +1,78 @@
+english_bands_by_city = {
+  :liverpool =>   "The Beatles",
+  :manchester =>  "The Smiths",
+  :coventry =>    "Delia Derbyshire and the BBC Radiophonic Band",
+  :london =>      "Ziggy Stardust and the Spiders from Mars"
+}
+
+{"key" => "value", "key2" => "value2"}
+
+new_hash = {
+  "key" => "value",
+  "key2" => "value2"
+}
+
+new_hash
+
+second_new_hash = Hash.new
+
+second_new_hash = {}
+
+pets = {"cat" => "Maru", "dog" => "Pluto"}
+
+pets["cat"]
+#=> returns "Maru"
+
+key = :name
+
+user_info = {:name => "Ada"}
+
+user_info[key]
+
+if pets["bird"]
+  puts "bird present in hash"
+else
+  puts "no bird in hash"
+end 
+
+a = [10, 20, 30, 40].map{ |num| num * 2 }
+puts a 
+
+[10, 20, 30, 40].reduce(0){ |total, num| total + num }
+
+[10, 20, 30, 40].reduce(100){ |total, num| total + num }
+
+[10, 20, 30, 40].select{ |num| num > 25 }
+[10, 20, 30, 40].reject{ |num| num > 25 }
+[10, 20, 30, 40].filter{ |num| num > 25 }
+
+bands = {
+  joy_division: %w[ian bernard peter stephen],
+  the_smiths: %w[johnny andy morrissey mike],
+}
+
+CREATE TABLE cats (
+  id INTEGER
+PRIMARY KEY,
+  name TEXT,
+  age INTEGER,
+  breed TEXT,
+  owner_id INTEGER
+);
+
+INSERT INTO cats (name, age, breed, owner_id) VALUES ("Maru", 3, "Scottish Fold" 1);
+INSERT INTO cats (name, age, breed, owner_id) VALUES ("Hana", 1, "Tabby", 1);
+INSERT INTO cats (name, age, breed) VALUES ("Lil\' Bub", 5, "American Shorthair")
+INSERT INTO cats (name, age, breed) VALUES ("Moe", 10, "Tabby")
+INSERT INTO cats (name, age, breed) VALUES ("Patches", 2, "Calico");
+
+SELECT * FROM cats;
+
+SELECT * FROM cats ORDER BY age;
+
+SELECT * FROM cats ORDER BY age DESC;
+
+SELECT * FROM cats ORDER BY age DESC LIMIT 1;
+
+SELECT * FROM cats ORDER BY age DESC LIMIT 2;
+
